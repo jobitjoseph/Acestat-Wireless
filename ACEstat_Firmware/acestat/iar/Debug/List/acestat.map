@@ -1,0 +1,963 @@
+###############################################################################
+#
+# IAR ELF Linker V9.40.2.374/W64 for ARM                  08/Dec/2023  14:01:10
+# Copyright 2007-2023 IAR Systems AB.
+#
+#    Output file  =
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Exe\acestat.out_nochecksum
+#    Map file     =
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\List\acestat.map
+#    Command line =
+#        -f
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Exe\acestat.out_nochecksum.rsp
+#        (E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\ACEstat_lib_18049017152477189160.dir\ACEstat_adc.o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\ACEstat_lib_18049017152477189160.dir\ACEstat_cleaning.o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\ACEstat_lib_18049017152477189160.dir\ACEstat_eis.o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\ACEstat_lib_18049017152477189160.dir\ACEstat_gpt.o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\ACEstat_lib_18049017152477189160.dir\ACEstat_interface.o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\ACEstat_lib_18049017152477189160.dir\ACEstat_inthandlers.o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\ACEstat_lib_18049017152477189160.dir\ACEstat_misc.o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\ACEstat_lib_18049017152477189160.dir\ACEstat_mux.o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\ACEstat_lib_18049017152477189160.dir\ACEstat_setup.o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\ACEstat_lib_18049017152477189160.dir\ACEstat_tia.o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\ACEstat_lib_18049017152477189160.dir\ACEstat_voltammetry.o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\common_14919461937644757070.dir\ad5940.o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\common_14919461937644757070.dir\ADuCM355Port.o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\separate_10086832050302845662.dir\AfeAdcLib.o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\separate_10086832050302845662.dir\AfeDacLib.o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\separate_10086832050302845662.dir\AfeTiaLib.o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\common_14919461937644757070.dir\AfeWdtLib.o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\application_7220717732061272824.dir\BootloaderConstantArray.o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\common_14919461937644757070.dir\ClkLib.o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\common_14919461937644757070.dir\CrcLib.o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\common_14919461937644757070.dir\DioLib.o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\common_14919461937644757070.dir\DmaLib.o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\common_14919461937644757070.dir\FeeLib.o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\common_14919461937644757070.dir\GptLib.o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\common_14919461937644757070.dir\I2cLib.o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\common_14919461937644757070.dir\Impedance.o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\common_14919461937644757070.dir\IntLib.o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\application_7220717732061272824.dir\main.o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\common_14919461937644757070.dir\PwrLib.o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\startup_5253055491327143397.dir\retarget.o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\common_14919461937644757070.dir\RstLib.o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\common_14919461937644757070.dir\RtcLib.o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\common_14919461937644757070.dir\SpiLib.o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\startup_5253055491327143397.dir\startup_ADuCM355_bootloader.o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\startup_5253055491327143397.dir\system_ADuCM355.o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\common_14919461937644757070.dir\UrtLib.o
+#        --no_out_extension -o
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Exe\acestat.out_nochecksum
+#        --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb
+#        --keep bootloader --keep __checksum --map
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\List\acestat.map --config
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\ADuCM355_SRAM_Mode2.icf --entry
+#        __iar_program_start --place_holder __checksum,4,.checksum,4
+#        --define_symbol __checksum_begin=0x2000 --define_symbol
+#        __checksum_end=0x27fb "C:\Program Files\IAR Systems\Embedded Workbench
+#        9.2\arm\CMSIS\Lib\IAR\iar_cortexM3l_math.a" --vfe --text_out locale
+#        --cpu=Cortex-M3 --fpu=None) --dependencies=n
+#        E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Exe\acestat.out_nochecksum.iar_deps
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__CPP_Runtime   = 1
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because --advanced_heap
+was not specified and the application did not appear to
+be primarily optimized for speed.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+define block BOOTLOADER
+   with size = 8K, alignment = 4 { ro object BootloaderConstantArray.o };
+"A0":  place at address 0x0 { block BOOTLOADER };
+"A1":  place at address 0x2180 { ro section ReadProtectedKeyHash };
+"A2":  place at address 0x2190 { ro section CRC_ReadProtectedKeyHash };
+"A3":  place at address 0x2194 { ro section NumCRCPages };
+define block CHECKSUM with size = 4, alignment = 4 { ro section .checksum };
+"A4":  place at address 0x27fc { block CHECKSUM };
+"A5":  place at start of [from 0x2000 to 0x217f] { ro section .intvec };
+"P2":  place in [from 0x2800 to 0x1'ffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+"A6":  place at end of [from 0x2000'0000 to 0x2000'1fff] { block CSTACK };
+define block HEAP with size = 512, alignment = 8 { };
+"P3":  place in [from 0x2000'0000 to 0x2000'1fff] { rw, block HEAP };
+"P6":  place in [from 0x2004'0000 to 0x2004'7fff] {
+          rw section never_retained_ram };
+initialize by copy { rw };
+
+No sections matched the following patterns:
+
+  ro section Page0_region        in "P1"
+  rw section bank1_retained_ram  in "P5"
+  section ISRAM_REGION           in "P4"
+
+
+  Section                 Kind         Address    Size  Object
+  -------                 ----         -------    ----  ------
+"A0":                                           0x2000
+  BOOTLOADER                               0x0  0x2000  <Block>
+    .rodata               const            0x0  0x2000  BootloaderConstantArray.o [2]
+                                      - 0x2000  0x2000
+
+"A5":                                            0x140
+  .intvec                 const         0x2000   0x140  startup_ADuCM355_bootloader.o [5]
+                                      - 0x2140   0x140
+
+"A1":                                             0x10
+  ReadProtectedKeyHash    const         0x2180    0x10  startup_ADuCM355_bootloader.o [5]
+                                      - 0x2190    0x10
+
+"A2":                                              0x4
+  CRC_ReadProtectedKeyHash
+                          const         0x2190     0x4  startup_ADuCM355_bootloader.o [5]
+                                      - 0x2194     0x4
+
+"A3":                                              0x4
+  NumCRCPages             const         0x2194     0x4  startup_ADuCM355_bootloader.o [5]
+                                      - 0x2198     0x4
+
+"A4":                                              0x4
+  CHECKSUM                              0x27fc     0x4  <Block>
+    .checksum             const         0x27fc     0x4  Place holder __checksum
+                                      - 0x2800     0x4
+
+"P2":                                           0x7d6c
+  .text                   ro code       0x2800  0x1184  ACEstat_voltammetry.o [1]
+  .text                   ro code       0x3984    0x60  ACEstat_interface.o [1]
+  .text                   ro code       0x39e4   0x2e2  ACEstat_tia.o [1]
+  .text                   ro code       0x3cc6    0x3a  packbits_init_single.o [8]
+  .text                   ro code       0x3d00    0x28  printf.o [6]
+  .text                   ro code       0x3d28   0x4f8  ACEstat_adc.o [1]
+  .text                   ro code       0x4220     0x8  abs.o [6]
+  .text                   ro code       0x4228   0x1e0  ACEstat_gpt.o [1]
+  .text                   ro code       0x4408    0x1a  U32ToFlt.o [7]
+  .text                   ro code       0x4422     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0x4424    0x48  FltToDbl.o [7]
+  .text                   ro code       0x446c    0x68  DblToFlt.o [7]
+  .text                   ro code       0x44d4    0x28  FltCmpLe.o [7]
+  .text                   ro code       0x44fc    0x60  AfeDacLib.o [4]
+  .text                   ro code       0x455c   0x16e  FltAddSub.o [7]
+  .text                   ro code       0x46ca     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0x46cc    0x1c  U32ToDbl.o [7]
+  .text                   ro code       0x46e8    0x36  DblToS32.o [7]
+  .text                   ro code       0x471e     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0x4720   0x108  ClkLib.o [3]
+  .text                   ro code       0x4828   0x1aa  DblMul.o [7]
+  .text                   ro code       0x49d2     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0x49d4   0x246  DblDiv.o [7]
+  .text                   ro code       0x4c1a     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0x4c1c   0x118  FltDiv.o [7]
+  .text                   ro code       0x4d34    0x24  S32ToFlt.o [7]
+  .text                   ro code       0x4d58    0xd8  FltMul.o [7]
+  .text                   ro code       0x4e30    0x26  FltToS32.o [7]
+  .text                   ro code       0x4e56     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0x4e58    0xfc  AfeAdcLib.o [4]
+  .text                   ro code       0x4f54   0x150  ACEstat_inthandlers.o [1]
+  .text                   ro code       0x50a4   0x156  iar_Stoulx.o [6]
+  .text                   ro code       0x51fa     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0x51fc    0x68  PwrLib.o [3]
+  .text                   ro code       0x5264    0xc8  AfeTiaLib.o [4]
+  .text                   ro code       0x532c   0xeae  xprintffull_nomb.o [6]
+  .text                   ro code       0x61da     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0x61dc    0x22  S32ToDbl.o [7]
+  .text                   ro code       0x61fe     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0x6200    0x3e  GptLib.o [3]
+  .text                   ro code       0x623e     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0x6240   0x25e  DblAddSub.o [7]
+  .text                   ro code       0x649e     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0x64a0    0x22  DblToU32.o [7]
+  .text                   ro code       0x64c2     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0x64c4   0x104  UrtLib.o [3]
+  .text                   ro code       0x65c8    0x58  memchr.o [8]
+  .text                   ro code       0x6620    0x16  strchr.o [8]
+  .text                   ro code       0x6636     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0x6638    0x40  xfail_s.o [6]
+  .text                   ro code       0x6678    0x36  strlen.o [8]
+  .text                   ro code       0x66ae     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0x66b0    0x18  ABImemcpy_small.o [8]
+  .text                   ro code       0x66c8    0x70  frexp.o [7]
+  .text                   ro code       0x6738    0x34  DblCmpLe.o [7]
+  .text                   ro code       0x676c    0x34  DblCmpGe.o [7]
+  .text                   ro code       0x67a0   0x13a  ldexp.o [7]
+  .text                   ro code       0x68da     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0x68dc   0x106  I64DivMod_small.o [8]
+  .text                   ro code       0x69e2     0x6  abort.o [6]
+  .text                   ro code       0x69e8     0x2  I64DivZer.o [8]
+  .text                   ro code       0x69ea     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0x69ec     0xc  XXexit.o [8]
+  .text                   ro code       0x69f8  0x1084  ad5940.o [3]
+  .text                   ro code       0x7a7c    0x18  FltToU32.o [7]
+  .text                   ro code       0x7a94   0x2f4  logx64.o [7]
+  .text                   ro code       0x7d88   0x68c  pow64.o [7]
+  .text                   ro code       0x8414    0x22  I64Shl.o [8]
+  .text                   ro code       0x8436     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0x8438    0x5a  S64ToFlt.o [7]
+  .text                   ro code       0x8492     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0x8494    0x1c  FltCmpEq.o [7]
+  .text                   ro code       0x84b0    0xa4  ADuCM355Port.o [3]
+  .text                   ro code       0x8554    0x20  DblCmpEq.o [7]
+  .text                   ro code       0x8574   0x30c  iar_Exp64.o [7]
+  .text                   ro code       0x8880    0x3e  DioLib.o [3]
+  .text                   ro code       0x88be     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0x88c0    0x70  IntLib.o [3]
+  .text                   ro code       0x8930   0x8a0  Impedance.o [3]
+  .text                   ro code       0x91d0     0x6  ABImemclr4.o [8]
+  .text                   ro code       0x91d6     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0x91d8    0xf2  sqrt.o [7]
+  .text                   ro code       0x92ca     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0x92cc   0x178  atan2_64.o [7]
+  .text                   ro code       0x9444    0x32  ABImemset48.o [8]
+  .text                   ro code       0x9476     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0x9478   0x200  iar_Atan64.o [7]
+  .rodata                 const         0x9678   0x420  pow64.o [7]
+  .text                   ro code       0x9a98   0x2ac  ACEstat_cleaning.o [1]
+  .text                   ro code       0x9d44   0x1c8  ACEstat_eis.o [1]
+  .text                   ro code       0x9f0c   0x144  main.o [2]
+  .text                   ro code       0xa050    0x24  AfeWdtLib.o [3]
+  .text                   ro code       0xa074    0x80  ACEstat_setup.o [1]
+  .text                   ro code       0xa0f4    0xc8  ACEstat_misc.o [1]
+  .rodata                 const         0xa1bc    0x70  ad5940.o [3]
+  .text                   ro code       0xa22c    0x54  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0xa280    0x42  system_ADuCM355.o [5]
+  .text                   ro code       0xa2c2     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0xa2c4    0x10  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0xa2d4    0x1e  cmain.o [8]
+  .text                   ro code       0xa2f2     0x4  low_level_init.o [6]
+  .text                   ro code       0xa2f6     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0xa2f8    0x28  data_init.o [8]
+  .text                   ro code       0xa320     0x4  exit.o [6]
+  .text                   ro code       0xa324     0xa  cexit.o [8]
+  .text                   ro code       0xa32e     0x2  startup_ADuCM355_bootloader.o [5]
+  .rodata                 const         0xa330    0x50  iar_Stoulx.o [6]
+  .rodata                 const         0xa380    0x40  iar_Atan64.o [7]
+  .text                   ro code       0xa3c0    0x38  zero_init3.o [8]
+  .rodata                 const         0xa3f8    0x34  ad5940.o [3]
+  .iar.init_table         const         0xa42c    0x28  - Linker created -
+  .text                   ro code       0xa454    0x1c  retarget.o [5]
+  .text                   ro code       0xa470    0x1c  cstartup_M.o [8]
+  .text                   ro code       0xa48c    0x16  xprout.o [6]
+  .text                   ro code       0xa4a2     0x2  startup_ADuCM355_bootloader.o [5]
+  .rodata                 const         0xa4a4     0x8  main.o [2]
+  .text                   ro code       0xa4ac     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0xa4ae     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0xa4b0     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0xa4b2     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0xa4b4     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0xa4b6     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0xa4b8     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0xa4ba     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0xa4bc     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0xa4be     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0xa4c0     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0xa4c2     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0xa4c4     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0xa4c6     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0xa4c8     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0xa4ca     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0xa4cc     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0xa4ce     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0xa4d0     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0xa4d2     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0xa4d4     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0xa4d6     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0xa4d8     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0xa4da     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0xa4dc     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0xa4de     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0xa4e0     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0xa4e2     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0xa4e4     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0xa4e6     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0xa4e8     0x2  startup_ADuCM355_bootloader.o [5]
+  .text                   ro code       0xa4ea     0x2  startup_ADuCM355_bootloader.o [5]
+  .rodata                 const         0xa4ec     0x0  zero_init3.o [8]
+  .rodata                 const         0xa4ec     0x0  packbits_init_single.o [8]
+  Initializer bytes       const         0xa4ec    0x80  <for P3-1>
+                                      - 0xa56c  0x7d6c
+
+Absolute sections:                               0x140
+  .noinit                 uninit   0x2000'0000   0x140  startup_ADuCM355_bootloader.o [5]
+                                 - 0x2000'0140   0x140
+
+"P3", part 1 of 2:                                0xf8
+  P3-1                             0x2000'0140    0xf8  <Init block>
+    .data                 inited   0x2000'0140     0xc  ClkLib.o [3]
+    .data                 inited   0x2000'014c    0xe8  Impedance.o [3]
+    .data                 inited   0x2000'0234     0x4  main.o [2]
+                                 - 0x2000'0238    0xf8
+
+"P3", part 2 of 2:                               0x850
+  .bss                    zero     0x2000'0238   0x800  ACEstat_eis.o [1]
+  .bss                    zero     0x2000'0a38    0x20  ad5940.o [3]
+  .bss                    zero     0x2000'0a58    0x10  ACEstat_misc.o [1]
+  .bss                    zero     0x2000'0a68     0x4  ACEstat_misc.o [1]
+  .bss                    zero     0x2000'0a6c     0x4  ACEstat_misc.o [1]
+  .bss                    zero     0x2000'0a70     0x4  ACEstat_misc.o [1]
+  .bss                    zero     0x2000'0a74     0x4  ADuCM355Port.o [3]
+  .bss                    zero     0x2000'0a78     0x4  xfail_s.o [6]
+  .bss                    zero     0x2000'0a7c     0x2  ACEstat_misc.o [1]
+  .bss                    zero     0x2000'0a7e     0x1  ACEstat_interface.o [1]
+  .bss                    zero     0x2000'0a7f     0x1  ACEstat_misc.o [1]
+  .bss                    zero     0x2000'0a80     0x1  ACEstat_misc.o [1]
+  .bss                    zero     0x2000'0a81     0x1  ACEstat_misc.o [1]
+  .bss                    zero     0x2000'0a82     0x1  ACEstat_misc.o [1]
+  .bss                    zero     0x2000'0a83     0x1  ACEstat_misc.o [1]
+  .bss                    zero     0x2000'0a84     0x1  ACEstat_misc.o [1]
+                                 - 0x2000'0a85   0x84d
+
+"A6":                                            0x400
+  CSTACK                           0x2000'1c00   0x400  <Block>
+    CSTACK                uninit   0x2000'1c00   0x400  <Block tail>
+                                 - 0x2000'2000   0x400
+
+"P6":                                           0x7d00
+  never_retained_ram      zero     0x2004'0000  0x7d00  ACEstat_adc.o [1]
+                                 - 0x2004'7d00  0x7d00
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+       0xa56c     0x1'ffff  0x1'5a94
+  0x2000'0a88  0x2000'1bff    0x1178
+  0x2004'7d00  0x2004'7fff     0x300
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    2 destination ranges, total size 0x854d:
+          0x2000'0238   0x84d
+          0x2004'0000  0x7d00
+
+Copy/packbits (__iar_packbits_init_single3)
+    1 source range, total size 0x80 (51% of destination):
+               0xa4ec    0x80
+    1 destination range, total size 0xf8:
+          0x2000'0140    0xf8
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                         ro code  ro data  rw data  rw data
+                                                               (abs)
+    ------                         -------  -------  -------  -------
+command line/config:
+    Place holder __checksum                       4
+    -----------------------------------------------------------------
+    Total:                                        4
+
+E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\ACEstat_lib_18049017152477189160.dir: [1]
+    ACEstat_adc.o                    1'272            32'000
+    ACEstat_cleaning.o                 684
+    ACEstat_eis.o                      456             2'048
+    ACEstat_gpt.o                      480
+    ACEstat_interface.o                 96                 1
+    ACEstat_inthandlers.o              336
+    ACEstat_misc.o                     200                36
+    ACEstat_setup.o                    128
+    ACEstat_tia.o                      738
+    ACEstat_voltammetry.o            4'484
+    -----------------------------------------------------------------
+    Total:                           8'874            34'085
+
+E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\application_7220717732061272824.dir: [2]
+    BootloaderConstantArray.o                 8'192
+    main.o                             324       11        4
+    -----------------------------------------------------------------
+    Total:                             324    8'203        4
+
+E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\common_14919461937644757070.dir: [3]
+    ADuCM355Port.o                     164                 4
+    AfeWdtLib.o                         36
+    ClkLib.o                           264        6       12
+    DioLib.o                            62
+    GptLib.o                            62
+    Impedance.o                      2'208      119      232
+    IntLib.o                           112
+    PwrLib.o                           104
+    UrtLib.o                           260
+    ad5940.o                         4'228      164       32
+    -----------------------------------------------------------------
+    Total:                           7'500      289      280
+
+E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\separate_10086832050302845662.dir: [4]
+    AfeAdcLib.o                        252
+    AfeDacLib.o                         96
+    AfeTiaLib.o                        200
+    -----------------------------------------------------------------
+    Total:                             548
+
+E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\startup_5253055491327143397.dir: [5]
+    retarget.o                          28
+    startup_ADuCM355_bootloader.o      216      344               320
+    system_ADuCM355.o                   66
+    -----------------------------------------------------------------
+    Total:                             310      344               320
+
+dl7M_tln.a: [6]
+    abort.o                              6
+    abs.o                                8
+    exit.o                               4
+    iar_Stoulx.o                       342       80
+    low_level_init.o                     4
+    printf.o                            40
+    xfail_s.o                           64                 4
+    xprintffull_nomb.o               3'758
+    xprout.o                            22
+    -----------------------------------------------------------------
+    Total:                           4'248       80        4
+
+m7M_tl.a: [7]
+    DblAddSub.o                        606
+    DblCmpEq.o                          32
+    DblCmpGe.o                          52
+    DblCmpLe.o                          52
+    DblDiv.o                           582
+    DblMul.o                           426
+    DblToFlt.o                         104
+    DblToS32.o                          54
+    DblToU32.o                          34
+    FltAddSub.o                        366
+    FltCmpEq.o                          28
+    FltCmpLe.o                          40
+    FltDiv.o                           280
+    FltMul.o                           216
+    FltToDbl.o                          72
+    FltToS32.o                          38
+    FltToU32.o                          24
+    S32ToDbl.o                          34
+    S32ToFlt.o                          36
+    S64ToFlt.o                          90
+    U32ToDbl.o                          28
+    U32ToFlt.o                          26
+    atan2_64.o                         376
+    frexp.o                            112
+    iar_Atan64.o                       512       64
+    iar_Exp64.o                        780
+    ldexp.o                            314
+    logx64.o                           756
+    pow64.o                          1'676    1'056
+    sqrt.o                             242
+    -----------------------------------------------------------------
+    Total:                           7'988    1'120
+
+rt7M_tl.a: [8]
+    ABImemclr4.o                         6
+    ABImemcpy_small.o                   24
+    ABImemset48.o                       50
+    I64DivMod_small.o                  262
+    I64DivZer.o                          2
+    I64Shl.o                            34
+    XXexit.o                            12
+    cexit.o                             10
+    cmain.o                             30
+    cstartup_M.o                        28
+    data_init.o                         40
+    memchr.o                            88
+    packbits_init_single.o              58
+    strchr.o                            22
+    strlen.o                            54
+    zero_init3.o                        56
+    -----------------------------------------------------------------
+    Total:                             776
+
+    Linker created                               40    1'024
+---------------------------------------------------------------------
+    Grand Total:                    30'568   10'080   35'397      320
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address    Size  Type      Object
+-----                       -------    ----  ----      ------
+.iar.init_table$$Base        0xa42c           --   Gb  - Linker created -
+.iar.init_table$$Limit       0xa454           --   Gb  - Linker created -
+?main                        0xa2d5          Code  Gb  cmain.o [8]
+AD5940ImpedanceStructInit
+                             0x9da1    0x8a  Code  Gb  ACEstat_eis.o [1]
+AD5940_ADCBaseCfgS           0x7441    0x14  Code  Gb  ad5940.o [3]
+AD5940_ADCDigCompCfgS        0x74d1    0x2e  Code  Gb  ad5940.o [3]
+AD5940_ADCFilterCfgS         0x7455    0x50  Code  Gb  ad5940.o [3]
+AD5940_AFECtrlS              0x6fe5    0x52  Code  Gb  ad5940.o [3]
+AD5940_AFEPwrBW              0x7037     0xa  Code  Gb  ad5940.o [3]
+AD5940_CLKCfg                0x7873    0xc4  Code  Gb  ad5940.o [3]
+AD5940_ClksCalculate         0x6bf1   0x13c  Code  Gb  ad5940.o [3]
+AD5940_ClksCalculate::sinc2osr_table
+                             0xa3f8    0x34  Data  Lc  ad5940.o [3]
+AD5940_ClksCalculate::sinc3osr_table
+                             0x6d2c    0x10  Data  Lc  ad5940.o [3]
+AD5940_ClrMCUIntFlag         0x84f5     0xa  Code  Gb  ADuCM355Port.o [3]
+AD5940_D2DReadReg            0x6eb9    0x1a  Code  Lc  ad5940.o [3]
+AD5940_DFTCfgS               0x751b    0x48  Code  Gb  ad5940.o [3]
+AD5940_DSPCfgS               0x7417    0x2a  Code  Gb  ad5940.o [3]
+AD5940_Delay10us             0x84b1    0x3e  Code  Gb  ADuCM355Port.o [3]
+AD5940_EnterSleepS           0x7a23    0x16  Code  Gb  ad5940.o [3]
+AD5940_FIFOCfg               0x7563    0x4c  Code  Gb  ad5940.o [3]
+AD5940_FIFOCtrlS             0x75b9    0x16  Code  Gb  ad5940.o [3]
+AD5940_FIFOGetCnt            0x75cf     0xe  Code  Gb  ad5940.o [3]
+AD5940_FIFORd                0x6ed3    0x16  Code  Gb  ad5940.o [3]
+AD5940_GetMCUIntFlag         0x84ef     0x6  Code  Gb  ADuCM355Port.o [3]
+AD5940_HFOSC32MHzCtrl        0x7949    0x6c  Code  Gb  ad5940.o [3]
+AD5940_HSDacCfgS             0x713f    0x26  Code  Gb  ad5940.o [3]
+AD5940_HSLoopCfgS            0x70e1    0x24  Code  Gb  ad5940.o [3]
+AD5940_HSTIACfgS             0x71a9    0x5a  Code  Gb  ad5940.o [3]
+AD5940_INTCCfg               0x79c5    0x22  Code  Gb  ad5940.o [3]
+AD5940_INTCClrFlag           0x79f1     0xa  Code  Gb  ad5940.o [3]
+AD5940_INTCTestFlag          0x79fb    0x1e  Code  Gb  ad5940.o [3]
+AD5940_Initialize            0x6f95    0x50  Code  Gb  ad5940.o [3]
+AD5940_Initialize::RegTable
+                             0xa1bc    0x70  Data  Lc  ad5940.o [3]
+AD5940_LPAMPCfgS             0x73bb    0x56  Code  Gb  ad5940.o [3]
+AD5940_LPDAC0WriteS          0x7395     0x2  Code  Gb  ad5940.o [3]
+AD5940_LPDAC1WriteS          0x73a9    0x12  Code  Gb  ad5940.o [3]
+AD5940_LPDACCfgS             0x732b    0x6a  Code  Gb  ad5940.o [3]
+AD5940_LPLoopCfgS            0x7319    0x12  Code  Gb  ad5940.o [3]
+AD5940_MCUResourceInit       0x8501    0x2e  Code  Gb  ADuCM355Port.o [3]
+AD5940_Notch50HzAvailable
+                             0x6ae9    0x52  Code  Gb  ad5940.o [3]
+AD5940_Notch50HzAvailable{1}{2}::available_sinc2_osr
+                             0x6b4c     0x8  Data  Lc  ad5940.o [3]
+AD5940_Notch50HzAvailable{1}{2}::dl_50Hz
+                             0x6b54     0x8  Data  Lc  ad5940.o [3]
+AD5940_Notch50HzAvailable{1}{5}{6}{10}{11}{12}::available_sinc2_osr
+                             0x6b3c     0x8  Data  Lc  ad5940.o [3]
+AD5940_Notch50HzAvailable{1}{5}{6}{10}{11}{12}::dl_50Hz
+                             0x6b44     0x8  Data  Lc  ad5940.o [3]
+AD5940_Notch50HzAvailable{1}{5}{6}{7}::available_sinc2_osr
+                             0x6b5c     0x4  Data  Lc  ad5940.o [3]
+AD5940_Notch50HzAvailable{1}{5}{6}{7}::dl_50Hz
+                             0x6b60     0x4  Data  Lc  ad5940.o [3]
+AD5940_Notch60HzAvailable
+                             0x6b65    0x50  Code  Gb  ad5940.o [3]
+AD5940_Notch60HzAvailable{1}{2}::available_sinc2_osr
+                             0x6bcc     0x2  Data  Lc  ad5940.o [3]
+AD5940_Notch60HzAvailable{1}{2}::dl_60Hz
+                             0x6bd0     0x2  Data  Lc  ad5940.o [3]
+AD5940_Notch60HzAvailable{1}{5}{6}{10}{11}{12}::available_sinc2_osr
+                             0x6bbc     0x8  Data  Lc  ad5940.o [3]
+AD5940_Notch60HzAvailable{1}{5}{6}{10}{11}{12}::dl_60Hz
+                             0x6bc4     0x8  Data  Lc  ad5940.o [3]
+AD5940_Notch60HzAvailable{1}{5}{6}{7}::available_sinc2_osr
+                             0x6bd4     0x2  Data  Lc  ad5940.o [3]
+AD5940_Notch60HzAvailable{1}{5}{6}{7}::dl_60Hz
+                             0x6bd8     0x2  Data  Lc  ad5940.o [3]
+AD5940_REFCfgS               0x7041    0xa0  Code  Gb  ad5940.o [3]
+AD5940_ReadReg               0x6f59    0x3c  Code  Gb  ad5940.o [3]
+AD5940_SEQCfg                0x75dd    0x68  Code  Gb  ad5940.o [3]
+AD5940_SEQCmdWrite           0x766b    0x2c  Code  Gb  ad5940.o [3]
+AD5940_SEQGenCtrl            0x6abb    0x12  Code  Gb  ad5940.o [3]
+AD5940_SEQGenFetchSeq        0x6aa7    0x14  Code  Gb  ad5940.o [3]
+AD5940_SEQGenInit            0x6a87    0x20  Code  Gb  ad5940.o [3]
+AD5940_SEQGenInsert          0x69f9    0x28  Code  Gb  ad5940.o [3]
+AD5940_SEQGenSearchReg       0x6a21    0x2c  Code  Lc  ad5940.o [3]
+AD5940_SEQGpioCtrlS          0x76f9     0xa  Code  Gb  ad5940.o [3]
+AD5940_SEQInfoCfg            0x7699    0x54  Code  Gb  ad5940.o [3]
+AD5940_SEQMmrTrig            0x7655    0x16  Code  Gb  ad5940.o [3]
+AD5940_SEQRegInfoInsert
+                             0x6a4d    0x3a  Code  Lc  ad5940.o [3]
+AD5940_SWMatrixCfgS          0x7105    0x3a  Code  Gb  ad5940.o [3]
+AD5940_SleepKeyCtrlS         0x7a19     0xa  Code  Gb  ad5940.o [3]
+AD5940_StatisticCfgS         0x74ff    0x1c  Code  Gb  ad5940.o [3]
+AD5940_SweepNext             0x6d43   0x14e  Code  Gb  ad5940.o [3]
+AD5940_WGCfgS                0x7203    0x9c  Code  Gb  ad5940.o [3]
+AD5940_WGFreqCtrlS           0x729f    0x12  Code  Gb  ad5940.o [3]
+AD5940_WGFreqWordCal         0x72b1    0x52  Code  Gb  ad5940.o [3]
+AD5940_WUPTCfg               0x7703   0x14a  Code  Gb  ad5940.o [3]
+AD5940_WUPTCtrl              0x784d    0x1e  Code  Gb  ad5940.o [3]
+AD5940_WakeUp                0x7a39    0x24  Code  Gb  ad5940.o [3]
+AD5940_WriteReg              0x6ee9    0x70  Code  Gb  ad5940.o [3]
+ADCRAW                  0x2000'0a7c     0x2  Data  Gb  ACEstat_misc.o [1]
+ADC_Int_Handler              0xa4cd     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+AFE_SETUP_LPTIA_LPDAC        0x3b2b    0xe0  Code  Gb  ACEstat_tia.o [1]
+AFE_SETUP_VOLTAMMETRY        0x3c69    0x5e  Code  Gb  ACEstat_tia.o [1]
+AfeAdcChan                   0x4ee9    0x12  Code  Gb  AfeAdcLib.o [4]
+AfeAdcChopEn                 0x4f13    0x14  Code  Gb  AfeAdcLib.o [4]
+AfeAdcFiltCfg                0x4e6d    0x18  Code  Gb  AfeAdcLib.o [4]
+AfeAdcGo                     0x4efb    0x12  Code  Gb  AfeAdcLib.o [4]
+AfeAdcIntCfg                 0x4e85     0x4  Code  Gb  AfeAdcLib.o [4]
+AfeAdcPgaCfg                 0x4e89    0x60  Code  Gb  AfeAdcLib.o [4]
+AfeAdcPwrUp                  0x4e59     0xe  Code  Gb  AfeAdcLib.o [4]
+AfeAdc_Int_Handler           0x4f5f    0x30  Code  Gb  ACEstat_inthandlers.o [1]
+AfeCMDFifo_Int_Handler       0xa4d3     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+AfeClkSel                    0xa0f5    0x68  Code  Gb  ACEstat_misc.o [1]
+AfeCrcError_Int_Handler
+                             0xa4d9     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+AfeDATAFifo_Int_Handler
+                             0xa4d5     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+AfeError_Int_Handler         0xa4cf     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+AfeGeneral_Int_Handler       0xa4d1     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+AfeGpTimer0_Int_Handler
+                             0xa4db     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+AfeGpTimer1_Int_Handler
+                             0xa4dd     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+AfeHpTiaPwrUp                0x52d5    0x1c  Code  Gb  AfeTiaLib.o [4]
+AfeLpTiaAdvanced             0x52b1    0x24  Code  Gb  AfeTiaLib.o [4]
+AfeLpTiaCon                  0x5265    0x28  Code  Gb  AfeTiaLib.o [4]
+AfeLpTiaPwrDown              0x528d    0x18  Code  Gb  AfeTiaLib.o [4]
+AfePwrCfg                    0x51fd    0x52  Code  Gb  PwrLib.o [3]
+AfeSwitchFullCfg             0x52f1    0x28  Code  Gb  AfeTiaLib.o [4]
+AfeSysCfg                    0x4e67     0x6  Code  Gb  AfeAdcLib.o [4]
+AfeSysClkDiv                 0xa15d    0x3c  Code  Gb  ACEstat_misc.o [1]
+AfeSysClkSpeed          0x2000'0144     0x4  Data  Lc  ClkLib.o [3]
+AfeWdtGo                     0xa051    0x1e  Code  Gb  AfeWdtLib.o [3]
+AfeWdt_Int_Handler           0xa4d7     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+Afe_Int3_Handler             0x852f    0x10  Code  Gb  ADuCM355Port.o [3]
+AppBuff                 0x2000'0238   0x800  Data  Gb  ACEstat_eis.o [1]
+AppIMPCfg               0x2000'014c    0xe8  Data  Gb  Impedance.o [3]
+AppIMPCtrl                   0x8945    0xc6  Code  Gb  Impedance.o [3]
+AppIMPDataProcess            0x8ee9   0x244  Code  Gb  Impedance.o [3]
+AppIMPGetCfg                 0x8931    0x12  Code  Gb  Impedance.o [3]
+AppIMPISR                    0x912d    0x68  Code  Gb  Impedance.o [3]
+AppIMPInit                   0x8a0b   0x468  Code  Gb  Impedance.o [3]
+AppIMPRegModify              0x8eab    0x3e  Code  Gb  Impedance.o [3]
+BOOTLOADER$$Base                0x0           --   Gb  - Linker created -
+BOOTLOADER$$Limit            0x2000           --   Gb  - Linker created -
+Battery_Voltage_Int_Handler
+                             0x69eb     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+BusFault_Handler             0x49d3     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+CHECKSUM$$Base               0x27fc           --   Gb  - Linker created -
+CHECKSUM$$Limit              0x2800           --   Gb  - Linker created -
+CSTACK$$Base            0x2000'1c00           --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'2000           --   Gb  - Linker created -
+ClkDivCfg                    0x4767    0x36  Code  Gb  ClkLib.o [3]
+ClockInit                    0xa075    0x20  Code  Gb  ACEstat_setup.o [1]
+CrcOfReadKey                 0x2190     0x4  Data  Gb  startup_ADuCM355_bootloader.o [5]
+Crypto_Int_Handler           0xa4c5     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+D2DClkSpeedCheck             0x47db    0x18  Code  Gb  ClkLib.o [3]
+DMA_ADC0_Int_Handler         0xa4c7     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+DMA_AES0_IN_Int_Handler
+                             0xa4bf     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+DMA_AES0_OUT_Int_Handler
+                             0xa4c1     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+DMA_AfeCMDFifo_Int_Handler
+                             0xa4df     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+DMA_AfeDATAFifo_Int_Handler
+                             0xa4e1     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+DMA_Err_Int_Handler          0xa4a3     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+DMA_FLASH0_Int_Handler       0xa4c3     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+DMA_I2C0_MX_Int_Handler
+                             0xa4bd     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+DMA_I2C0_SRX_Int_Handler
+                             0xa4bb     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+DMA_I2C0_STX_Int_Handler
+                             0xa4b9     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+DMA_SIP4_Int_Handler         0xa4e3     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+DMA_SIP5_Int_Handler         0xa4e5     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+DMA_SIP6_Int_Handler         0xa4e7     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+DMA_SIP7_Int_Handler         0xa4e9     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+DMA_SPI0_RX_Int_Handler
+                             0xa4b3     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+DMA_SPI0_TX_Int_Handler
+                             0xa4b1     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+DMA_SPI1_RX_Int_Handler
+                             0xa4af     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+DMA_SPI1_TX_Int_Handler
+                             0xa4ad     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+DMA_UART_RX_Int_Handler
+                             0xa4b7     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+DMA_UART_TX_Int_Handler
+                             0xa4b5     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+DebugMon_Handler             0x51fb     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+DigClkSel                    0x4721    0x46  Code  Gb  ClkLib.o [3]
+DigRootClkSpeed         0x2000'0140     0x4  Data  Lc  ClkLib.o [3]
+DioCfgPin                    0x8881     0x4  Code  Gb  DioLib.o [3]
+DioIenPin                    0x8885     0x2  Code  Gb  DioLib.o [3]
+EiCfg                        0x88c9    0x5e  Code  Gb  IntLib.o [3]
+EiClr                        0x88c1     0x8  Code  Gb  IntLib.o [3]
+Ext_Int0_Handler             0x649f     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+Ext_Int1_Handler             0x64c3     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+Ext_Int2_Handler             0x6637     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+FINAL_CRC_PAGE {Abs}            0x4          Data  Gb  <internal module>
+Flash0_Int_Handler           0x92cb     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+GPIO_A_Int_Handler           0x8493     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+GPIO_B_Int_Handler           0x88bf     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+GP_Tmr0_Int_Handler          0x4fb5    0x2a  Code  Gb  ACEstat_inthandlers.o [1]
+GP_Tmr1_Int_Handler          0x91d7     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+GP_Tmr2_Int_Handler          0x4f8f    0x26  Code  Gb  ACEstat_inthandlers.o [1]
+GptCfg                       0x6201    0x1c  Code  Gb  GptLib.o [3]
+GptClrInt                    0x6223     0x2  Code  Gb  GptLib.o [3]
+GptLd                        0x621d     0x2  Code  Gb  GptLib.o [3]
+GptSta                       0x621f     0x4  Code  Gb  GptLib.o [3]
+HardFault_Handler            0x46cb     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+I2C0_Master_Int_Handler
+                             0xa32f     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+I2C0_Slave_Int_Handler       0xa2f7     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+ImpedanceShowResult          0x9d45    0x5c  Code  Gb  ACEstat_eis.o [1]
+LPDacCfg                     0x4525    0x10  Code  Gb  AfeDacLib.o [4]
+LPDacPwrCtrl                 0x44fd    0x28  Code  Gb  AfeDacLib.o [4]
+LPDacWr                      0x4541    0x14  Code  Gb  AfeDacLib.o [4]
+LPRTIA_LOOKUP                0x39e5    0x8a  Code  Gb  ACEstat_tia.o [1]
+LPRTIA_VAL_LOOKUP            0x3a71    0x9e  Code  Gb  ACEstat_tia.o [1]
+MemManage_Handler            0x471f     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+NmiSR                        0x4423     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+NumOfCRCPages                0x2194     0x4  Data  Gb  startup_ADuCM355_bootloader.o [5]
+PLL_Int_Handler              0xa4c9     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+PendSV_Handler               0x61db     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+RESERVED_VECTOR              0xa4eb     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+RNG_Int_Handler              0xa4cb     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+RTC0_Int_Handler             0x8437     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+RTC1_Int_Handler             0x623f     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+ReadProKeyHsh                0x2180    0x10  Data  Gb  startup_ADuCM355_bootloader.o [5]
+Region$$Table$$Base          0xa42c           --   Gb  - Linker created -
+Region$$Table$$Limit         0xa454           --   Gb  - Linker created -
+ResetISR                     0xa22d    0x54  Code  Wk  startup_ADuCM355_bootloader.o [5]
+SPI0_Int_Handler             0x9477     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+SPI1_Int_Handler             0xa2c3     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+SVC_Handler                  0x4e57     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+SeqGenDB                0x2000'0a3c    0x1c  Data  Gb  ad5940.o [3]
+SysTick_Handler              0x61ff     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+UART_Int_Handler             0x4fdf    0x88  Code  Gb  ACEstat_inthandlers.o [1]
+UART_buffer             0x2000'0a58    0x10  Data  Gb  ACEstat_misc.o [1]
+UF_START_PAGE {Abs}             0x4          Data  Gb  <internal module>
+UartInit                     0xa095    0x54  Code  Gb  ACEstat_setup.o [1]
+UrtCfg                       0x64c5    0xb0  Code  Gb  UrtLib.o [3]
+UrtFifoCfg                   0x6585     0x8  Code  Gb  UrtLib.o [3]
+UrtFifoClr                   0x658d     0xc  Code  Gb  UrtLib.o [3]
+UrtIntCfg                    0x65bf     0x6  Code  Gb  UrtLib.o [3]
+UrtIntSta                    0x65c5     0x4  Code  Gb  UrtLib.o [3]
+UrtLinSta                    0x659f     0x4  Code  Gb  UrtLib.o [3]
+UrtRx                        0x65b5     0x4  Code  Gb  UrtLib.o [3]
+UrtTx                        0x65a3    0x12  Code  Gb  UrtLib.o [3]
+UsageFault_Handler           0x4c1b     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+Vreg_over_Int_Handler        0x68db     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+WDog_Tmr_Int_Handler         0x66af     0x2  Code  Wk  startup_ADuCM355_bootloader.o [5]
+_LC                          0x532d     0x6  Code  Lc  xprintffull_nomb.o [6]
+_LitobFullNoMb               0x5ff9   0x114  Code  Lc  xprintffull_nomb.o [6]
+_PrintfFullNoMb              0x5333   0xc98  Code  Gb  xprintffull_nomb.o [6]
+_Prout                       0xa48d    0x16  Code  Gb  xprout.o [6]
+_PutcharsFullNoMb            0x6165    0x2e  Code  Lc  xprintffull_nomb.o [6]
+__AD5940_SetDExRTIA          0x7169    0x30  Code  Lc  ad5940.o [3]
+__AD5940_SetDExRTIA{1}{2}{3}{5}::DeRtiaTable
+                             0x7198    0x10  Data  Lc  ad5940.o [3]
+__NVIC_EnableIRQ             0x3d29    0x18  Code  Lc  ACEstat_adc.o [1]
+__NVIC_SystemReset           0x9a99    0x1a  Code  Lc  ACEstat_cleaning.o [1]
+__NVIC_SystemReset           0x2801    0x1e  Code  Lc  ACEstat_voltammetry.o [1]
+__aeabi_cdcmpeq              0x8555          Code  Gb  DblCmpEq.o [7]
+__aeabi_cdcmple              0x6739          Code  Gb  DblCmpLe.o [7]
+__aeabi_cdrcmple             0x676d          Code  Gb  DblCmpGe.o [7]
+__aeabi_cfcmpeq              0x8495          Code  Gb  FltCmpEq.o [7]
+__aeabi_cfcmple              0x44d5          Code  Gb  FltCmpLe.o [7]
+__aeabi_d2f                  0x446d          Code  Gb  DblToFlt.o [7]
+__aeabi_d2iz                 0x46e9          Code  Gb  DblToS32.o [7]
+__aeabi_d2uiz                0x64a1          Code  Gb  DblToU32.o [7]
+__aeabi_dadd                 0x6241          Code  Gb  DblAddSub.o [7]
+__aeabi_ddiv                 0x49d5          Code  Gb  DblDiv.o [7]
+__aeabi_dmul                 0x4829          Code  Gb  DblMul.o [7]
+__aeabi_dsub                 0x63bd          Code  Gb  DblAddSub.o [7]
+__aeabi_f2d                  0x4425          Code  Gb  FltToDbl.o [7]
+__aeabi_f2iz                 0x4e31          Code  Gb  FltToS32.o [7]
+__aeabi_f2uiz                0x7a7d          Code  Gb  FltToU32.o [7]
+__aeabi_fadd                 0x455d          Code  Gb  FltAddSub.o [7]
+__aeabi_fdiv                 0x4c1d          Code  Gb  FltDiv.o [7]
+__aeabi_fmul                 0x4d59          Code  Gb  FltMul.o [7]
+__aeabi_fsub                 0x463d          Code  Gb  FltAddSub.o [7]
+__aeabi_i2d                  0x61dd          Code  Gb  S32ToDbl.o [7]
+__aeabi_i2f                  0x4d35          Code  Gb  S32ToFlt.o [7]
+__aeabi_l2f                  0x8439          Code  Gb  S64ToFlt.o [7]
+__aeabi_ldiv0                0x69e9          Code  Gb  I64DivZer.o [8]
+__aeabi_llsl                 0x8415          Code  Gb  I64Shl.o [8]
+__aeabi_memclr4              0x91d1          Code  Gb  ABImemclr4.o [8]
+__aeabi_ui2d                 0x46cd          Code  Gb  U32ToDbl.o [7]
+__aeabi_ui2f                 0x4409          Code  Gb  U32ToFlt.o [7]
+__checksum                   0x27fc     0x4  Data  Gb  Place holder __checksum
+__checksum_begin {Abs}       0x2000          Data  Gb  <internal module>
+__checksum_end {Abs}         0x27fb          Data  Gb  <internal module>
+__cmain                      0xa2d5          Code  Gb  cmain.o [8]
+__exit                       0x69ed          Code  Gb  XXexit.o [8]
+__iar_Atan64                 0x9479   0x200  Code  Gb  iar_Atan64.o [7]
+__iar_Exp64                  0x8575   0x2ba  Code  Gb  iar_Exp64.o [7]
+__iar_Fail_s                 0x6639    0x1c  Code  Gb  xfail_s.o [6]
+__iar_Log64                  0x7a95   0x268  Code  Lc  logx64.o [7]
+__iar_Memchr                 0x65c9          Code  Gb  memchr.o [8]
+__iar_Memset4_word           0x9445          Code  Gb  ABImemset48.o [8]
+__iar_Memset8_word           0x9445          Code  Gb  ABImemset48.o [8]
+__iar_Stoul                  0x51eb     0x2  Code  Gb  iar_Stoulx.o [6]
+__iar_Stoulx                 0x50a5   0x140  Code  Gb  iar_Stoulx.o [6]
+__iar_Strchr                 0x6621          Code  Gb  strchr.o [8]
+__iar_atan2_64               0x92cd   0x16e  Code  Gb  atan2_64.o [7]
+__iar_data_init3             0xa2f9    0x28  Code  Gb  data_init.o [8]
+__iar_frexp                  0x66d5          Code  Gb  frexp.o [7]
+__iar_frexp64                0x66c9          Code  Gb  frexp.o [7]
+__iar_frexpl                 0x66d5          Code  Gb  frexp.o [7]
+__iar_init_core              0xa2c5    0x10  Code  Wk  startup_ADuCM355_bootloader.o [5]
+__iar_ldexp64                0x67a1          Code  Gb  ldexp.o [7]
+__iar_log10_64               0x7d85     0x4  Code  Gb  logx64.o [7]
+__iar_log10_medium           0x7d85     0x4  Code  Gb  logx64.o [7]
+__iar_log10_medium64         0x7d85     0x4  Code  Gb  logx64.o [7]
+__iar_log10_mediuml          0x7d85     0x4  Code  Gb  logx64.o [7]
+__iar_packbits_init_single3
+                             0x3cc7    0x3a  Code  Gb  packbits_init_single.o [8]
+__iar_pow64                  0x7d89   0x60c  Code  Gb  pow64.o [7]
+__iar_pow_medium             0x7d89   0x60c  Code  Gb  pow64.o [7]
+__iar_pow_medium64           0x7d89   0x60c  Code  Gb  pow64.o [7]
+__iar_pow_mediuml            0x7d89   0x60c  Code  Gb  pow64.o [7]
+__iar_program_start          0xa471          Code  Gb  cstartup_M.o [8]
+__iar_scalbln64              0x67a1          Code  Gb  ldexp.o [7]
+__iar_scalbn64               0x67a1          Code  Gb  ldexp.o [7]
+__iar_small_Memcpy           0x66b5          Code  Gb  ABImemcpy_small.o [8]
+__iar_small_memcpy           0x66b1          Code  Gb  ABImemcpy_small.o [8]
+__iar_small_memcpy4          0x66b1          Code  Gb  ABImemcpy_small.o [8]
+__iar_small_memcpy8          0x66b1          Code  Gb  ABImemcpy_small.o [8]
+__iar_small_uldivmod         0x68dd          Code  Gb  I64DivMod_small.o [8]
+__iar_sqrt64                 0x91d9          Code  Gb  sqrt.o [7]
+__iar_zero_init3             0xa3c1    0x38  Code  Gb  zero_init3.o [8]
+__low_level_init             0xa2f3     0x4  Code  Gb  low_level_init.o [6]
+__relocated_vector_table
+                        0x2000'0000   0x140  Data  Wk  startup_ADuCM355_bootloader.o [5]
+__vector_table               0x2000   0x140  Data  Gb  startup_ADuCM355_bootloader.o [5]
+_call_main                   0xa2e1          Code  Gb  cmain.o [8]
+_exit                        0xa325          Code  Gb  cexit.o [8]
+_is_value_in_table           0x6acd    0x1c  Code  Lc  ad5940.o [3]
+a                            0xa380    0x40  Data  Lc  iar_Atan64.o [7]
+abort                        0x69e3     0x6  Code  Gb  abort.o [6]
+abs                          0x4221     0x8  Code  Wk  abs.o [6]
+adcModeSel              0x2000'0a82     0x1  Data  Gb  ACEstat_misc.o [1]
+adcRdy                  0x2000'0a80     0x1  Data  Gb  ACEstat_misc.o [1]
+adc_current_setup_lptia
+                             0x3e09    0x34  Code  Gb  ACEstat_adc.o [1]
+adc_to_current               0x3ef9    0x52  Code  Gb  ACEstat_adc.o [1]
+adc_to_voltage               0x3ed3    0x26  Code  Gb  ACEstat_adc.o [1]
+adc_voltage_setup_AIN        0x3dbd    0x4c  Code  Gb  ACEstat_adc.o [1]
+adc_voltage_setup_RE         0x3d41    0x18  Code  Gb  ACEstat_adc.o [1]
+adc_voltage_setup_SE         0x3d59    0x16  Code  Gb  ACEstat_adc.o [1]
+adi_default_setting          0xa2c1     0x2  Code  Gb  system_ADuCM355.o [5]
+adi_system_EnableISRAM       0xa281    0x1a  Code  Gb  system_ADuCM355.o [5]
+adi_system_EnableRetention
+                             0xa29b    0x1c  Code  Gb  system_ADuCM355.o [5]
+adjust_DAC                   0x40c1    0xca  Code  Gb  ACEstat_adc.o [1]
+atan2                        0x92cd   0x16e  Code  Gb  atan2_64.o [7]
+atan2l                       0x92cd   0x16e  Code  Gb  atan2_64.o [7]
+atoi                         0x51ed     0x2  Code  Gb  iar_Stoulx.o [6]
+bIsS2silicon            0x2000'0a38     0x1  Data  Lc  ad5940.o [3]
+bootloader                      0x0  0x2000  Data  Gb  BootloaderConstantArray.o [2]
+caSetVoltages                0x3283    0x34  Code  Gb  ACEstat_voltammetry.o [1]
+caSignalMeasure              0x32b7   0x176  Code  Gb  ACEstat_voltammetry.o [1]
+cleaningStep1                0x9abd    0x68  Code  Gb  ACEstat_cleaning.o [1]
+cleaningStep2                0x9b25    0x72  Code  Gb  ACEstat_cleaning.o [1]
+cleaningStep3                0x9bb5    0x84  Code  Gb  ACEstat_cleaning.o [1]
+cleaningStep4                0x9c45    0x5e  Code  Gb  ACEstat_cleaning.o [1]
+clk10UsDelay            0x2000'0148     0x4  Data  Lc  ClkLib.o [3]
+clockUpdate                  0x479d    0x3e  Code  Gb  ClkLib.o [3]
+cswvEquilibriumDelay         0x2f01     0x2  Code  Gb  ACEstat_voltammetry.o [1]
+cswvSetVoltages              0x2ea7    0x42  Code  Gb  ACEstat_voltammetry.o [1]
+cswvSignalMeasure            0x2f63   0x164  Code  Gb  ACEstat_voltammetry.o [1]
+cvEquilibriumDelay           0x295b    0x5c  Code  Gb  ACEstat_voltammetry.o [1]
+cvSetVoltages                0x291d    0x3e  Code  Gb  ACEstat_voltammetry.o [1]
+cvSignalMeasure              0x29b7    0xec  Code  Gb  ACEstat_voltammetry.o [1]
+delay_10us                   0x47f3    0x16  Code  Gb  ClkLib.o [3]
+dftRdy                  0x2000'0a81     0x1  Data  Gb  ACEstat_misc.o [1]
+digits                       0xa358    0x28  Data  Lc  iar_Stoulx.o [6]
+dpvSignalMeasure             0x36ab    0xda  Code  Gb  ACEstat_voltammetry.o [1]
+exit                         0xa321     0x4  Code  Gb  exit.o [6]
+frexp                        0x66c9          Code  Gb  frexp.o [7]
+frexpl                       0x66c9          Code  Gb  frexp.o [7]
+get_adc_val                  0x3e4f     0x8  Code  Gb  ACEstat_adc.o [1]
+get_parameter                0x398b    0x1e  Code  Gb  ACEstat_interface.o [1]
+get_sensor_channel           0x39c5    0x16  Code  Gb  ACEstat_interface.o [1]
+get_timer_ctr                0x427f     0x6  Code  Gb  ACEstat_gpt.o [1]
+gpt_config_scanrate          0x4229    0x26  Code  Gb  ACEstat_gpt.o [1]
+gpt_config_simple            0x4251    0x26  Code  Gb  ACEstat_gpt.o [1]
+gpt_wait_for_flag            0x4285     0xe  Code  Gb  ACEstat_gpt.o [1]
+iNumBytesInFifo         0x2000'0a70     0x4  Data  Gb  ACEstat_misc.o [1]
+ldexp                        0x67a1          Code  Gb  ldexp.o [7]
+ldexpl                       0x67a1          Code  Gb  ldexp.o [7]
+lnbias                       0x9678   0x420  Data  Lc  pow64.o [7]
+log10                        0x7d85     0x4  Code  Gb  logx64.o [7]
+log10l                       0x7d85     0x4  Code  Gb  logx64.o [7]
+mV_to_DAC                    0x4095    0x2c  Code  Gb  ACEstat_adc.o [1]
+main                         0x9f0d    0x3c  Code  Gb  main.o [2]
+memchr                       0x65c9          Code  Gb  memchr.o [8]
+ndigs                        0xa330    0x28  Data  Lc  iar_Stoulx.o [6]
+oversample_adc               0x3e73    0x60  Code  Gb  ACEstat_adc.o [1]
+pow                          0x7d89   0x60c  Code  Gb  pow64.o [7]
+powl                         0x7d89   0x60c  Code  Gb  pow64.o [7]
+printCSWVResults             0x311b    0x24  Code  Gb  ACEstat_voltammetry.o [1]
+printCVResults               0x2ac7    0xb2  Code  Gb  ACEstat_voltammetry.o [1]
+printSWVResults              0x2dc3    0x1c  Code  Gb  ACEstat_voltammetry.o [1]
+printf                       0x3d01    0x28  Code  Gb  printf.o [6]
+printing_mode           0x2000'0a7e     0x1  Data  Gb  ACEstat_interface.o [1]
+putchar                      0xa455    0x1c  Code  Gb  retarget.o [5]
+reset_adc_flag               0x3e57     0xa  Code  Gb  ACEstat_adc.o [1]
+reset_timer_ctr              0x4277     0x8  Code  Gb  ACEstat_gpt.o [1]
+return_adc_buffer            0x3e49     0x6  Code  Gb  ACEstat_adc.o [1]
+runCA                        0x31e9    0x7c  Code  Gb  ACEstat_voltammetry.o [1]
+runCSWV                      0x2ddf    0x84  Code  Gb  ACEstat_voltammetry.o [1]
+runCV                        0x2821    0xc8  Code  Gb  ACEstat_voltammetry.o [1]
+runDPV                       0x3619    0x92  Code  Gb  ACEstat_voltammetry.o [1]
+runEIS                       0x9e2d    0x9c  Code  Gb  ACEstat_eis.o [1]
+runOCP                       0x347d   0x15a  Code  Gb  ACEstat_voltammetry.o [1]
+runSWV                       0x2b79    0x7c  Code  Gb  ACEstat_voltammetry.o [1]
+runTest                      0x9f51    0x9c  Code  Gb  main.o [2]
+scalbln                      0x67a1          Code  Gb  ldexp.o [7]
+scalblnl                     0x67a1          Code  Gb  ldexp.o [7]
+scalbn                       0x67a1          Code  Gb  ldexp.o [7]
+scalbnl                      0x67a1          Code  Gb  ldexp.o [7]
+scale                        0x610d    0x46  Code  Lc  xprintffull_nomb.o [6]
+scanrate_lookup              0x42a9   0x160  Code  Gb  ACEstat_gpt.o [1]
+sec_hand                0x2000'0a78     0x4  Data  Lc  xfail_s.o [6]
+set_adc_flag                 0x3e61     0xa  Code  Gb  ACEstat_adc.o [1]
+set_adc_mode                 0x3e6b     0x8  Code  Gb  ACEstat_adc.o [1]
+set_printing_mode            0x3985     0x6  Code  Gb  ACEstat_interface.o [1]
+sqrt                         0x91d9          Code  Gb  sqrt.o [7]
+sqrtl                        0x91d9          Code  Gb  sqrt.o [7]
+strchr                       0x6621          Code  Gb  strchr.o [8]
+strlen                       0x6679          Code  Gb  strlen.o [8]
+swvEquilibriumDelay          0x2c71     0x4  Code  Gb  ACEstat_voltammetry.o [1]
+swvSetVoltages               0x2c1f    0x52  Code  Gb  ACEstat_voltammetry.o [1]
+swvSignalMeasure             0x2c75    0xfe  Code  Gb  ACEstat_voltammetry.o [1]
+swv_mov_avg                  0x3f4b   0x120  Code  Gb  ACEstat_adc.o [1]
+szADCSamples            0x2004'0000  0x7d00  Data  Gb  ACEstat_adc.o [1]
+timer_ctr               0x2000'0a68     0x4  Data  Gb  ACEstat_misc.o [1]
+tmr2_timeout            0x2000'0a84     0x1  Data  Gb  ACEstat_misc.o [1]
+turn_off_afe_power_things_down
+                             0x41df    0x42  Code  Gb  ACEstat_adc.o [1]
+uart_flag               0x2000'0a83     0x1  Data  Gb  ACEstat_misc.o [1]
+uart_flag_reset              0x4f55     0xa  Code  Gb  ACEstat_inthandlers.o [1]
+ucCOMIID0               0x2000'0a6c     0x4  Data  Gb  ACEstat_misc.o [1]
+ucComRx                 0x2000'0a7f     0x1  Data  Gb  ACEstat_misc.o [1]
+ucInterrupted           0x2000'0a74     0x4  Data  Lc  ADuCM355Port.o [3]
+version                 0x2000'0234     0x4  Data  Gb  main.o [2]
+
+
+[1] = E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\ACEstat_lib_18049017152477189160.dir
+[2] = E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\application_7220717732061272824.dir
+[3] = E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\common_14919461937644757070.dir
+[4] = E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\separate_10086832050302845662.dir
+[5] = E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Obj\startup_5253055491327143397.dir
+[6] = dl7M_tln.a
+[7] = m7M_tl.a
+[8] = rt7M_tl.a
+
+  30'568 bytes of readonly  code memory
+  10'080 bytes of readonly  data memory
+  35'397 bytes of readwrite data memory (+ 320 absolute)
+
+Errors: none
+Warnings: none
