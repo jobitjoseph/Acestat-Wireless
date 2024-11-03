@@ -1,0 +1,13 @@
+"C:\Program Files\IAR Systems\Embedded Workbench 9.2\arm\bin\armPROC.dll" 
+
+"C:\Program Files\IAR Systems\Embedded Workbench 9.2\arm\bin\armJLINK.dll" 
+
+"E:\KMLSH\ACEstat_Firmware\acestat\iar\Debug\Exe\acestat.out" 
+
+--plugin="C:\Program Files\IAR Systems\Embedded Workbench 9.2\arm\bin\armbat.dll" 
+
+--flash_loader="C:\Program Files\IAR Systems\Embedded Workbench 9.2\arm/config/flashloader/AnalogDevices/FlashADUCM355.board" 
+
+
+
+
