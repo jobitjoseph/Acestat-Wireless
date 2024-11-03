@@ -1,0 +1,28 @@
+Reference	 Quantity	 Value	 Footprint	 Datasheet	
+C1 C7 	2	7pF	Capacitor_SMD:C_0402_1005Metric	~	x
+C13 C39 C40 C43 C48 	5	10uF	Capacitor_SMD:C_0402_1005Metric	~	x
+C14 	1	4.7u	Capacitor_SMD:C_0402_1005Metric	~	x
+C15 C16 C23 	3	4.7uF	Capacitor_SMD:C_0402_1005Metric	~	x
+C24 C26 C30 C32 	4	Variable	Capacitor_SMD:C_0402_1005Metric	~	
+C17 C18 C21 C28 C29 C31 	6	0.47uF	Capacitor_SMD:C_0402_1005Metric	~	x
+C2 C3 C4 C5 C8 C9 C10 C11 C12 C19 C20 C22 C25 C27 C33 C34 C35 C36 C37 C38 C44 C45 C46 C47 	24	0.1uF	Capacitor_SMD:C_0402_1005Metric	~	x
+C41 C42 	2	1uF	Capacitor_SMD:C_0402_1005Metric	~	x
+C6 	1	220pF	Capacitor_SMD:C_0402_1005Metric	~	x
+FB1 FB2 FB3 FB4 FB5 FB6 FB7 FB8 	8	Ferrite_Bead	Inductor_SMD:L_0402_1005Metric	~	x
+J1 	1	USB_C_Receptacle_USB2.0	Connector_USB:USB_C_Receptacle_Amphenol_12401610E4-2A	https://www.usb.org/sites/default/files/documents/usb_type-c.zip	x
+J2 	1	Conn_02x25_Odd_Even	SIB_Generic:Molex_SlimStack_2039560503	~	x
+J3 J4 	2	EC_Sensor_Input_3_Pin	Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal	~	x
+Q1 Q2 	2	Q_PMOS_DSG	Package_TO_SOT_SMD:SOT-23	~	x
+R1 R8 R9 R11 R12 R13 R14 R15 R16 R17 R18 R19 R20 R21 R22 	15	0	Resistor_SMD:R_0402_1005Metric	~	x
+R2 R3 	2	2.2	Resistor_SMD:R_0402_1005Metric	~	x
+R23 	1	2.2k	Resistor_SMD:R_0402_1005Metric	~	x
+R4 	1	200	Resistor_SMD:R_0402_1005Metric	~	x
+R5 R6 	2	Variable	Resistor_SMD:R_0402_1005Metric	~	
+R7 R10 	2	150k	Resistor_SMD:R_0402_1005Metric	~	x
+SW1 	1	SW_Push	Button_Switch_SMD:SW_SPST_B3S-1000	~	x
+TP1 TP2 	2	TestPoint	TestPoint:TestPoint_Keystone_5019_Minature	~	x
+U1 	1	aducm_355	SIB_Generic:aducm355		x
+U2 	1	FT232RQ	Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.3x3.3mm		x
+U3 	1	ADM7154	SIB_Generic:LFCSP_8Lead_CP_8_21		x
+U4 	1	AD5142	Package_CSP:LFCSP-16-1EP_3x3mm_P0.5mm_EP1.854x1.854mm	https://www.analog.com/media/en/technical-documentation/data-sheets/AD5122_5142.pdf	x
+Y1 	1	32MHz	Crystal:Crystal_SMD_Abracon_ABM10-4Pin_2.5x2.0mm	~	x
